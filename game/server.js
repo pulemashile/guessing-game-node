@@ -9,8 +9,8 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 // app.use(express.json());
 
-const cards = ["A", "B", "C", "C", "D", "D", "E", "E", "F", "F", "G", "G", "H", "H", "I", "I", "J", "J", 
-  "K", "K", "L", "L", "M", "M", "N", "N", "O", "O", "P", "P", "Q", "Q", "R", "R", "S", "S", "T", "T"];
+const cards = ["A", "A", "C", "C", "D", "D", "E", "E", "F", "F", "G", "G", "H", "H", "I", "I", "J", "J", 
+  "K", "K", "M", "M", "N", "N", "O", "O", "P", "P", "Q", "Q", "R", "R", "S", "S", "T", "T"];
 
 
 

@@ -115,9 +115,9 @@ main
 
 .button
 {
-    padding: 5px;
+    padding-top: 15px;
     font-size:medium;
-
+margin-top: 15;
     color: lightgray;
     background: #D91656;
     border: #000 solid 2px;
