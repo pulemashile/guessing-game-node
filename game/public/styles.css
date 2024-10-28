@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header, footer
+{
+    text-align: center;
+    color: aliceblue;
+    background-color: #FFCCEA;
+    min-height: 32px;
+}
+
+a
+{
+    color:cornflowerblue;
+}
+
+body 
+{
+   
+    height: 100vh;
+    width: 100%;
+    /* background: url(grid-paper.jpg) 6px 84px; */
+}
+
+main
+{
+    display: flex;    
+    min-height: 92vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap:25px;
+    background: #FFCCEA;
+    padding:  10px;
+}
+
+.memory_game
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width:720px;
+    height: 720px;
+    gap: 10px;
+    border-radius: 5%;
+
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.card
+{
+    position: relative;
+    display: flex;
+    font-size: 3em;
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   
+    width: 100px;
+    height: 100px;  
+    background: lightgray;
+    
+    transform: rotateY(360deg);
+    transition: 0.3s;
+}
+
+.card:hover 
+{
+    transform: translateY(0.05rem) scale(1.05); 
+    transition: transform 600ms ease-in-out;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card.flip_card
+{
+    transform: rotateY(0deg) ;
+}
+
+.card::after {
+  content: '🃏';  
+  font-size: 0px;
+  position: absolute;
+  inset: 0; 
+
+  transition: 0.25s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 15%;
+  background-image: url(./card-148624_1280.png);
+  background-size: cover; /* Resize the image to cover the whole card */
+  background-position: center;
+}
+.flip_card:after, 
+.match_card:after
+{
+    transform: rotateY(180deg);
+}
+
+.button
+{
+    padding: 5px;
+    font-size:medium;
+
+    color: lightgray;
+    background: #D91656;
+    border: #000 solid 2px;
+    border-radius: 25%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button:hover 
+{
+    transform: translateY(0.05rem) scale(1.05); 
+    transition: transform 600ms ease-in-out;
+
+    color: #313131;
+    background: lightgray;
+    border: #000 solid 2px;
+}
